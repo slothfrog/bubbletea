@@ -1,0 +1,35 @@
+.order-summary-drink {
+    margin-top: 10%;
+}
+
+.order-summary-total {
+    margin-top: 10%;
+    text-align: right;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.order-summary-tax{
+    font-size: 18px;
+}
+
+.order-summary-drink-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.order-summary-drink-price {
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.order-summary-time-selector .order-summary-label {
+    margin: 3% 3% 3% 0;
+    font-size: 20px;
+    text-align: left;
+}
+
+.order-summary-time-selector {
+    position: relative;
+    text-align: center;
+}

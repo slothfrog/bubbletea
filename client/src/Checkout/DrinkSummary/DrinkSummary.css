@@ -1,0 +1,10 @@
+.drink-summary-card {
+    margin: 15px;
+    width: 65%;
+    height: 100%;
+}
+.drink-summary-card-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #D5ECB4;
+}

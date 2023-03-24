@@ -1,0 +1,50 @@
+
+.no-item-found {
+    font-family: 'Fredoka', sans-serif;
+    height: calc(100vh - 110px);
+    margin-top: 110px;
+    justify-content: center;
+    display: flex;
+
+}
+.no-item-found-box {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin: auto;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-item-found-pepe {
+    margin: 15px;
+    background-image: url('../../../shared/media/no-item-in-cart.jpg');
+    background-size: no-repeat;
+    width: 538px;
+    height: 444px;
+    background-position: top;
+}
+
+.no-item-found-btn {
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #a6c875;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.no-item-found-btn:hover {
+    color: #D5ECB4;
+}
+
+.no-item-found-description {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+}

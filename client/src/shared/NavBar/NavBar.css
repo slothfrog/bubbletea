@@ -1,0 +1,23 @@
+.logo {
+    background-image: url("./../../shared/media/PEPE_MAIN.png");
+    height: 110px;
+    width: 110px;
+    background-size: contain;
+    top: 25px;
+    position: inherit;
+    margin-right: 15px;
+}
+
+.nav-button {
+    margin-right: 30px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    margin-right: 30px;
+    border: 0;
+    background-color: #a6c875;
+    height: 60px;
+}
+
+.nav-button:hover {
+    color: #D5ECB4;
+}

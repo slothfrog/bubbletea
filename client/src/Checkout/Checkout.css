@@ -1,0 +1,7 @@
+.checkout-summary{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Fredoka', sans-serif;
+    margin-top: 110px;
+    min-height: calc(100vh - 110px);
+}

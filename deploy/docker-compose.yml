@@ -1,0 +1,39 @@
+version: '3.8'
+services:
+  nginx:
+    container_name: nginx
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports: 
+      - '80:80'
+      - '443:443'
+    volumes:
+      - ../client:/var/www/html
+      - ./frontend/default.conf:/etc/nginx/sites-available/default
+      - /etc/letsencrypt:/etc/letsencrypt
+    depends_on:
+      - server
+  server: 
+    container_name: server
+    image: node:12-alpine
+    volumes: 
+      - ../server:/root/server
+    entrypoint: sh /root/server/start_prod.sh
+    depends_on:
+      - mongodb
+      - memcached
+    restart: unless-stopped
+  mongodb:
+    container_name: mongodb
+    image: mongo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=password
+      - MONGO_INITDB_DATABASE=pepesbubblesDB
+    volumes:
+      - ./mongodb/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+  memcached:
+    container_name: memcached
+    image: memcached
+  

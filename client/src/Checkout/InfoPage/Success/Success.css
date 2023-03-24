@@ -1,0 +1,9 @@
+.success-pepe {
+    margin: 15px;
+    background-image: url('../../../shared/media/success.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 400px;
+    background-position: top;
+}

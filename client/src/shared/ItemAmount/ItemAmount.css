@@ -1,0 +1,14 @@
+
+.item-amount {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.item-amount-number {
+    font-size: var(--font-medium);
+    padding-left: 5px;
+    padding-right: 5px;
+}

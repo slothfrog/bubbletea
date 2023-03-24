@@ -1,0 +1,33 @@
+.drinks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.drinks .drink-name {
+    padding: 0px 20px;
+    margin:0;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.drinks .drink-image {
+    height: 250px;
+    width: 250px;
+    margin-top: 20px;
+}
+
+.drinks .drink-item {
+    margin:20px;
+    width: 250px;
+}
+
+.drinks .drink-item:hover {
+    color: #D5ECB4;
+}
+
+.drinks .drink-item:hover .drink-image {
+    box-shadow: 0px -2px 15px 7px #56893c7d;
+}
+
+.container {
+    margin: 60px;
+}

@@ -1,0 +1,41 @@
+.divider {
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+
+.divider-top {
+    margin: 5% 5% 1% 5%;
+}
+
+.divider-bottom {
+    margin: 1% 5% 5% 5%;
+}
+
+.google {
+    margin: 0 auto;
+}
+
+.divider-label {
+    line-height: normal;
+    padding: 10px 0;
+    font-family: 'Fredoka', 'sans-serif';
+}
+
+.form-buttons {
+    display: block;
+}
+
+.big-btn {
+    margin: 20px 30px;
+    width: inherit;
+}
+
+.form-inputs .input {
+    background-image: radial-gradient(#ffffff, #ebebeb);
+    margin: 5px 30px;
+}
+
+.new-account {
+    margin: 0;
+    background-image: radial-gradient(#ffffff, #ebebeb);
+}

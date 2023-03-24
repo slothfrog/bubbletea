@@ -1,0 +1,43 @@
+
+.info-page {
+    font-family: 'Fredoka', sans-serif;
+    height: calc(100vh - 110px);
+    margin-top: 110px;
+    justify-content: center;
+    display: flex;
+
+}
+.info-page-box {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin: auto;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-page-btn {
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #a6c875;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.info-page-btn:hover {
+    color: #D5ECB4;
+}
+
+.info-page-description {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 15px;
+}

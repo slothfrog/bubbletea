@@ -1,0 +1,74 @@
+.drink-image-details{
+    height: 120px;
+    width: 120px;
+    margin-left: 50px;
+    box-shadow: 0px -2px 15px 7px #56893c7d;
+}
+
+.option-header {
+    border-bottom: 4px solid black;
+    width: 300px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.size-options {
+    margin-left: 10px;
+}
+
+.customizations {
+    margin-right:20px;
+}
+
+#size-select {
+    margin-left: 10px;
+}
+
+.item-details{
+    font-family: 'Fredoka', sans-serif;
+}
+
+.info-label {
+    margin: 0;
+    padding-right: 5px;
+    color: #56893c;
+}
+
+.info {
+    display: flex;
+    padding: 5px;
+}
+
+.user-select {
+    margin: 0;
+    font-weight: 100;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    width: -webkit-fill-available;
+}
+
+.confirm-add {
+    display: flex;
+}
+
+.drink-details-price {
+    padding-right: 30px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-change {
+    padding: 0;
+}
+
+.user-select {
+    text-transform: capitalize;
+}

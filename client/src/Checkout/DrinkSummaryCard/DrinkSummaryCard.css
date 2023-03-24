@@ -1,0 +1,49 @@
+:root {
+    --font-extra-large: 40px;
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-small: 14px;
+  }
+
+.root-card {
+    font-family: 'Fredoka', sans-serif;
+    width: 45%;
+    margin: 10px;
+}
+
+.name {
+    font-size: var(--font-large);
+    margin-left: 15px;
+}
+
+.details {
+    font-size: var(--font-small);
+    margin-top: 10px;
+}
+
+.thumbnail {
+    height: 120px;
+    width: 120px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: var(--font-small);
+    margin-left: auto;
+}
+
+.drink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.topping .price {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.topping {
+    position: relative;
+}

@@ -1,0 +1,36 @@
+
+.loading {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Fredoka', sans-serif;
+    margin-top: 110px;
+    min-height: calc(100vh - 110px);
+    font-size: 40px;
+    height: calc(100vh - 110px);
+    justify-content: center;
+}
+
+
+.loading-box {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-top: calc(10vh +110px);
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-pepe {
+    margin: 15px;
+    background-image: url('../../shared/media/pepe-hmm.gif');
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    background-position: top;
+}

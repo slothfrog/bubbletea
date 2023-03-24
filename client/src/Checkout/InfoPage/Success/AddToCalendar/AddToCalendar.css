@@ -1,0 +1,51 @@
+.chq-atc {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .chq-atc--button {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+    border: 0;
+    background-color: #a6c875;
+    
+    border-radius: 10px;
+    height: 40px;
+    margin-top: 15px;
+  }
+  
+  .chq-atc--button:hover {
+    color: #D5ECB4;
+  }
+  
+  .chq-atc--button svg {
+    vertical-align: text-bottom;
+  }
+  
+  .chq-atc--dropdown {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #eaeaea;
+    box-shadow: .5px .5px 3px rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+    position: absolute;
+    text-align: left;
+    white-space: nowrap;
+    margin-left: 30px;
+    width: calc(100% - 60px);
+    z-index: 1;
+    font-size: 20px;
+  }
+  
+  .chq-atc--dropdown a {
+    color: black;
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+  }
+  
+  .chq-atc--dropdown a:hover {
+    background-color: #eaeaea;
+  }

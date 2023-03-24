@@ -1,0 +1,47 @@
+# Thanks to https://www.youtube.com/watch?v=CIXCgx_c3WU for help
+version: '3.8'
+services:
+  graylog:
+    container_name: graylog
+    image: graylog/graylog:4.2.7
+    networks:
+      - graylog
+    depends_on:
+      - graylogmongo
+      - elasticsearch
+    environment:
+      - GRAYLOG_PASSWORD_SECRET=A_SECRET
+      - GRAYLOG_ROOT_PASSWORD_SHA2=A_PASSWORD #password
+      - GRAYLOG_HTTP_EXTERNAL_URI=http://127.0.0.1:9000/
+      - GRAYLOG_MONGODB_URI=mongodb://graylogmongo/graylog
+      - GRAYLOG_ELASTICSEARCH_VERSION=7
+    entrypoint: /usr/bin/tini -- wait-for-it elasticsearch:9200 -- /docker-entrypoint.sh
+    ports:
+      - 9000:9000
+      - 1514:1514
+      - 1514:1514/udp
+      - 12201:12201
+      - 12201:12201/udp
+      - 12111:12111/udp
+  graylogmongo:
+    image: mongo
+    container_name: graylogmongo
+    networks:
+      - graylog
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.2
+    container_name: elasticsearch
+    environment:
+      - http.host=0.0.0.0
+      - transport.host=localhost
+      - network.host=0.0.0.0
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ports:
+      - 9200:9200
+    networks:
+      - graylog
+
+networks:
+  graylog:
+    driver: bridge
+  
