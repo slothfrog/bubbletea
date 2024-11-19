@@ -1,9 +1,6 @@
  
 # Pepe’s Bubbles
  
-## Project URL
- 
-https://www.pepesbubbles.me/
  
 ## Project Video URL
  
