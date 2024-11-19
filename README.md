@@ -4,7 +4,7 @@
  
 ## Project Video URL
  
-YouTube Link: [https://youtu.be/sz8IwBg3Ni0](https://youtu.be/sz8IwBg3Ni0)
+[Demo Video](https://drive.google.com/file/d/1ebadJp-w-xkjGL7bakZZKMZZDQRzHdB4/view?usp=sharing)
  
 ## Project Description
  
